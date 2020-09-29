@@ -1,0 +1,79 @@
+
+/*
+    Menu.scss
+    Author: Matheus Pires
+    Github: @mopires
+
+*/
+
+@media screen and (max-width: 768px) {
+
+    .nav-brand{
+        width: 100%;
+        // margin: 0 auto;
+        // text-align: center;
+        display: flex;
+    }
+
+    .nav-item{
+        padding: 10px 15px 10px ;
+        /*text-align: center;*/
+        flex: 1;
+        
+    }
+
+
+    .nav-link-sm-hidden{
+        display: none;
+    }
+
+}
+
+
+.navbar{
+    width: 100%;
+    /*height: calc(font-size * (font-size * 10));*/
+    // padding: 10px 15px 10px;
+    display: flex;
+
+    
+}
+
+.navbar-dark{
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.nav-brand{
+    display: inline-flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 15px;
+
+
+}
+
+/* li[class^="nav-brand"]*/ 
+a[class^="nav-brand"]{
+    text-decoration: none;
+    // flex: 1.5;
+    
+}
+
+.nav-item{
+    padding: 10px 15px 10px ;
+    /*text-align: center;*/
+    display: inline-flex;
+    
+}
+
+.nav-link{
+    padding: 10px;
+    
+    
+}
+
+a[class^="nav-link"]{
+    text-decoration: none;
+}

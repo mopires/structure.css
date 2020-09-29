@@ -1,0 +1,426 @@
+/*
+    # Responsive CSS #
+
+    Author: Matheus Pires
+    Email: mopires23@gmail.com
+    Github: @mopires
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-dark {
+  background-color: #222;
+}
+
+.bg-dark-glass {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.bg-blue {
+  background-color: #3358ff;
+}
+
+.bg-green {
+  background-color: lightgreen;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-fill {
+  height: auto;
+}
+
+/* end hight */
+.container {
+  display: flex;
+}
+
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+div[class^=col-] {
+  flex: 1;
+  word-break: break-word;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.p-4 {
+  padding: 40px;
+}
+
+.p-5 {
+  padding: 50px;
+}
+
+div[class^=col-] div,
+div[class^=col-] p,
+div[class^=col-] table,
+div[class^=col-] hr {
+  padding: 10px 15px 5px;
+}
+
+.col-10 {
+  flex: 0 0 100%;
+}
+
+.col-9 {
+  flex: 0 0 calc(100% / 10 * 9);
+}
+
+.col-8 {
+  flex: 0 0 calc(100% / 10 * 8);
+}
+
+.col-7 {
+  flex: 0 0 calc(100% / 10 * 7);
+}
+
+.col-6 {
+  flex: 0 0 calc(100% / 10 * 6);
+}
+
+.col-5 {
+  flex: 0 0 calc(100% / 10 * 5);
+}
+
+.col-4 {
+  flex: 0 0 calc(100% / 10 * 4);
+}
+
+.col-3 {
+  flex: 0 0 calc(100% / 10 * 3);
+}
+
+.col-2 {
+  flex: 0 0 calc(100% / 10 * 2);
+}
+
+.col-1 {
+  flex: 0 0 calc(100% / 10 * 1);
+}
+
+/* col-sm- */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 100%;
+  }
+
+  .col-sm-9 {
+    flex: 0 0 calc(100% / 10 * 9);
+  }
+
+  .col-sm-8 {
+    flex: 0 0 calc(100% / 10 * 8);
+  }
+
+  .col-sm-7 {
+    flex: 0 0 calc(100% / 10 * 7);
+  }
+
+  .col-sm-6 {
+    flex: 0 0 calc(100% / 10 * 6);
+  }
+
+  .col-sm-5 {
+    flex: 0 0 calc(100% / 10 * 5);
+  }
+
+  .col-sm-4 {
+    flex: 0 0 calc(100% / 10 * 4);
+  }
+
+  .col-sm-3 {
+    flex: 0 0 calc(100% / 10 * 3);
+  }
+
+  .col-sm-2 {
+    flex: 0 0 calc(100% / 10 * 2);
+  }
+
+  .col-sm-1 {
+    flex: 0 0 calc(100% / 10 * 1);
+  }
+
+  /*  margins  */
+  .m-sm-top-10 {
+    margin-top: 10px;
+  }
+
+  .m-sm-top-20 {
+    margin-top: 20px;
+  }
+
+  /* buttons */
+  .button-sm-block {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+/* media */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .col-md-10 {
+    flex: 0 0 100%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 calc(100% / 10 * 9);
+  }
+
+  .col-md-8 {
+    flex: 0 0 calc(100% / 10 * 8);
+  }
+
+  .col-md-7 {
+    flex: 0 0 calc(100% / 10 * 7);
+  }
+
+  .col-md-6 {
+    flex: 0 0 calc(100% / 10 * 6);
+  }
+
+  .col-md-5 {
+    flex: 0 0 calc(100% / 10 * 5);
+  }
+
+  .col-md-4 {
+    flex: 0 0 calc(100% / 10 * 4);
+  }
+
+  .col-md-3 {
+    flex: 0 0 calc(100% / 10 * 3);
+  }
+
+  .col-md-2 {
+    flex: 0 0 calc(100% / 10 * 2);
+  }
+
+  .col-md-1 {
+    flex: 0 0 calc(100% / 10 * 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg-10 {
+    flex: 0 0 100%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 calc(100% / 10 * 9);
+  }
+
+  .col-lg-8 {
+    flex: 0 0 calc(100% / 10 * 8);
+  }
+
+  .col-lg-7 {
+    flex: 0 0 calc(100% / 10 * 7);
+  }
+
+  .col-lg-6 {
+    flex: 0 0 calc(100% / 10 * 6);
+  }
+
+  .col-lg-5 {
+    flex: 0 0 calc(100% / 10 * 5);
+  }
+
+  .col-lg-4 {
+    flex: 0 0 calc(100% / 10 * 4);
+  }
+
+  .col-lg-3 {
+    flex: 0 0 calc(100% / 10 * 3);
+  }
+
+  .col-lg-2 {
+    flex: 0 0 calc(100% / 10 * 2);
+  }
+
+  .col-lg-1 {
+    flex: 0 0 calc(100% / 10 * 1);
+  }
+
+  .col-lg-center-6 {
+    flex: 0 0 calc(100% / 10 * 6);
+    margin: 0 auto;
+  }
+
+  /* margins */
+  .m-lg-top-40 {
+    margin-top: 40px;
+  }
+}
+html div, body div {
+  box-shadow: inset 0px 0px 0px 1px lightgray;
+}
+
+.border {
+  /*border: lightgray 1px solid;*/
+  box-shadow: inset 0px 0px 0px 1px lightgray;
+  border-radius: 4px;
+}
+
+.round-1 {
+  border-radius: 10px;
+}
+
+.round-2 {
+  border-radius: 20px;
+}
+
+.round-3 {
+  border-radius: 30px;
+}
+
+.round-4 {
+  border-radius: 40px;
+}
+
+.round-pill {
+  border-radius: 80px;
+}
+
+.round-bottom-4 {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/*
+    Menu.scss
+    Author: Matheus Pires
+    Github: @mopires
+
+*/
+@media screen and (max-width: 768px) {
+  .nav-brand {
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 10px 15px 10px;
+    /*text-align: center;*/
+    flex: 1;
+  }
+
+  .nav-link-sm-hidden {
+    display: none;
+  }
+}
+.navbar {
+  width: 100%;
+  /*height: calc(font-size * (font-size * 10));*/
+  display: flex;
+}
+
+.navbar-dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.nav-brand {
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+/* li[class^="nav-brand"]*/
+a[class^=nav-brand] {
+  text-decoration: none;
+}
+
+.nav-item {
+  padding: 10px 15px 10px;
+  /*text-align: center;*/
+  display: inline-flex;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+a[class^=nav-link] {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+html, body {
+  line-height: 1.61803399;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.0005);
+  color: #333;
+  font-family: Nunito;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=build.css.map */

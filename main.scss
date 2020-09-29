@@ -1,0 +1,33 @@
+/*
+    # Responsive CSS #
+
+    Author: Matheus Pires
+    Email: mopires23@gmail.com
+    Github: @mopires
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    
+
+@import 'variables';
+@import 'colors';
+@import 'grid';
+@import 'border';
+@import 'menu';
+@import 'text-align';
+
+
+
+html, body{
+    line-height: $line-height;
+    -webkit-font-smoothing: $-webkit-font-smoothing;
+    -moz-osx-font-smoothing: $-moz-osx-font-smoothing;
+    margin: $margin;
+    padding:$padding;
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+    transition: $transition;
+}

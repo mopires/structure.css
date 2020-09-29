@@ -1,0 +1,416 @@
+/*
+    # Responsive CSS #
+
+    Author: Matheus Pires
+    Email: mopires23@gmail.com
+    Github: @mopires
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html, body{
+    margin: 0 auto;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.0005);
+    color: #333;
+    font-family: Roboto, sans-serif;
+    transition: all 0.5s;
+}
+
+
+/* grid SPECIFICATIONS */
+
+
+
+/* colors */
+
+    /*bg-color*/
+        .bg-transparent{ background-color: transparent;}
+        .bg-dark{ background-color: #222;}
+        .bg-dark-glass{ background-color: rgba(0,0,0,0.5);}
+        .bg-white{ background-color: white;}
+        .bg-lightgray{ background-color: lightgray;}
+        .bg-blue{ background-color: #3358ff;}
+        .bg-green{ background-color: lightgreen;}
+
+    /* font-color */
+
+
+/* colors */
+
+a{ color: #fff;}
+
+/* hight */
+
+    .h-25{
+        height: 25%;
+    }
+
+    .h-50{
+        height: 50%;
+    }
+
+    .h-75{
+        height: 75%;
+    }
+
+    .h-100{
+        height: 100%;
+    }
+
+    .h-fill{
+        height: auto;
+    }
+
+
+/* end hight */
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-full{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    overflow-x: hidden;
+}
+
+div[class^='col-']{
+
+    float: left;
+    word-break: break-word;
+
+}
+
+div[class^='col-'] div,
+div[class^='col-'] p,
+div[class^='col-'] table,
+div[class^='col-'] hr
+{
+
+    padding: 10px 15px 5px;
+
+}
+
+.col-10 {
+    flex: 0 0 100%;
+}
+
+.col-9 {
+    flex: 0 0 calc(100% / 10 * 9);
+}
+
+.col-8 {
+    flex: 0 0 calc(100% / 10 * 8);
+}
+
+.col-7 {
+    flex: 0 0 calc(100% / 10 * 7);
+}
+
+.col-6 {
+    flex: 0 0 calc(100% / 10 * 6);
+}
+
+.col-5 {
+    flex: 0 0 calc(100% / 10 * 5);
+}
+
+.col-4 {
+    flex: 0 0 calc(100% / 10 * 4);
+}
+
+.col-3 {
+    flex: 0 0 calc(100% / 10 * 3);
+}
+
+.col-2 {
+    flex: 0 0 calc(100% / 10 * 2);
+}
+
+.col-1 {
+    flex: 0 0 calc(100% / 10 * 1);
+}
+
+.navbar{
+    width: 100%;
+    /*height: calc(font-size * (font-size * 10));*/
+    padding: 0px 0px 0px;
+    
+}
+
+.navbar-dark{
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.nav-brand{
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 15px;
+
+
+}
+
+li[class^="nav-brand"] a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.nav-item{
+    padding: 5px 15px 5px;
+    /*text-align: center;*/
+
+}
+
+.nav-link{
+
+    display: inline-flex;
+    margin: 5px;
+    
+}
+
+li[class^="nav-link"] a{
+    text-decoration: none;
+}
+
+
+
+.border{
+    /*border: lightgray 1px solid;*/
+    box-shadow:inset 0px 0px 0px 1px lightgray;
+    border-radius: 4px;
+}
+
+.round-1{
+    border-radius: 10px;
+}
+
+.round-bottom-4{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.p-0{
+    padding: 0px 0px 0px;
+}
+
+
+
+/* col-sm- */
+@media screen and (max-width: 768px) {
+
+    html{
+        font-size: 18px;
+    }
+
+    .nav-brand{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .nav-link-sm-hidden{
+        display: none;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 100%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 calc(100% / 10 * 9);
+    }
+
+    .col-sm-8 {
+        flex: 0 0 calc(100% / 10 * 8);
+    }
+
+    .col-sm-7 {
+        flex: 0 0 calc(100% / 10 * 7);
+    }
+
+    .col-sm-6 {
+        flex: 0 0 calc(100% / 10 * 6);
+    }
+
+    .col-sm-5 {
+        flex: 0 0 calc(100% / 10 * 5);
+    }
+
+    .col-sm-4 {
+        flex: 0 0 calc(100% / 10 * 4);
+    }
+
+    .col-sm-3 {
+        flex: 0 0 calc(100% / 10 * 3);
+    }
+
+    .col-sm-2 {
+        flex: 0 0 calc(100% / 10 * 2);
+    }
+
+    .col-sm-1 {
+        flex: 0 0 calc(100% / 10 * 1);
+    }
+
+    /*  margins  */
+
+    .m-sm-top-10{
+        margin-top: 10px;
+    }
+
+    .m-sm-top-20{
+        margin-top: 20px;
+    }
+
+
+    /* buttons */
+
+    .button-sm-block{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+/* media */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    .col-md-10 {
+        flex: 0 0 100%;
+    }
+
+    .col-md-9 {
+        flex: 0 0 calc(100% / 10 * 9);
+    }
+
+    .col-md-8 {
+        flex: 0 0 calc(100% / 10 * 8);
+    }
+
+    .col-md-7 {
+        flex: 0 0 calc(100% / 10 * 7);
+    }
+
+    .col-md-6 {
+        flex: 0 0 calc(100% / 10 * 6);
+    }
+
+    .col-md-5 {
+        flex: 0 0 calc(100% / 10 * 5);
+    }
+
+    .col-md-4 {
+        flex: 0 0 calc(100% / 10 * 4);
+    }
+
+    .col-md-3 {
+        flex: 0 0 calc(100% / 10 * 3);
+    }
+
+    .col-md-2 {
+        flex: 0 0 calc(100% / 10 * 2);
+    }
+
+    .col-md-1 {
+        flex: 0 0 calc(100% / 10 * 1);
+    }
+
+}
+
+@media screen and  (min-width: 1200px) {
+
+    .col-lg-10 {
+        flex: 0 0 100%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 calc(100% / 10 * 9);
+    }
+
+    .col-lg-8 {
+        flex: 0 0 calc(100% / 10 * 8);
+    }
+
+    .col-lg-7 {
+        flex: 0 0 calc(100% / 10 * 7);
+    }
+
+    .col-lg-6 {
+        flex: 0 0 calc(100% / 10 * 6);
+    }
+
+    .col-lg-5 {
+        flex: 0 0 calc(100% / 10 * 5);
+    }
+
+    .col-lg-4 {
+        flex: 0 0 calc(100% / 10 * 4);
+    }
+
+    .col-lg-3 {
+        flex: 0 0 calc(100% / 10 * 3);
+    }
+
+    .col-lg-2 {
+        flex: 0 0 calc(100% / 10 * 2);
+    }
+
+    .col-lg-1 {
+        flex: 0 0 calc(100% / 10 * 1);
+    }
+
+    .col-lg-center-6{
+        flex: 0 0 calc(100% / 10 * 6);
+        margin: 0 auto;
+    }
+
+    /* margins */
+
+    .m-lg-top-40{
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
