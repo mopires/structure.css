@@ -1,3 +1,10 @@
+/*
+    # Responsive CSS #
+
+    Author: Matheus Pires
+    Email: mopires23@gmail.com
+    Github: @mopires
+*/
 
 .h-25{
     height: 25%;
@@ -26,25 +33,23 @@
     // width: 100%;
     // margin: 0 auto;
     display: flex;
+    // flex-flow: row wrap;
 }
 
 .container-full{
     width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    
-    overflow-x: hidden;
+    flex-flow: row wrap;
 }
 
-div[class^='col-']{
+div[class^="col-"]{
 
-    // float: left;
-    flex: 1;
     word-break: break-word;
+    box-sizing: border-box;
 
 }
 
@@ -78,7 +83,7 @@ div[class^='col-'] table,
 div[class^='col-'] hr
 {
 
-    padding: 10px 15px 5px;
+    padding: 10px 15px 10px;
 
 }
 
@@ -130,6 +135,15 @@ div[class^='col-'] hr
         font-size: 18px;
     }
 
+    div[class^='col-sm']{
+
+        // float: left;
+        // flex: 1;
+        word-break: break-word;
+        box-sizing: border-box;
+    
+    }
+
     .col-sm-10 {
         flex: 0 0 100%;
     }
@@ -179,6 +193,7 @@ div[class^='col-'] hr
     .m-sm-top-20{
         margin-top: 20px;
     }
+    
 
 
     /* buttons */

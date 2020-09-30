@@ -1,0 +1,77 @@
+
+/*
+    # Responsive CSS #
+
+    Author: Matheus Pires
+    Email: mopires23@gmail.com
+    Github: @mopires
+*/
+
+
+
+.p-0{
+    padding: 0px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.p-2{
+    padding: 20px;
+}
+
+.p-3{
+    padding: 30px;
+}
+
+.p-4{
+    padding: 40px;
+}
+
+.p-5{
+    padding: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.p-sm-0{
+    padding: 0px;
+}
+
+.p-sm-1{
+    padding: .5rem;
+}
+
+.p-sm-2{
+    padding: 1rem;
+}
+
+.p-sm-3{
+    padding: 1.2rem;
+}
+
+.p-sm-4{
+    padding: 1.5rem;
+}
+
+.p-sm-5{
+    padding: 2rem;
+}
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+
+
+}
+
+
+@media screen and  (min-width: 1200px) {
+
+    
+
+}
