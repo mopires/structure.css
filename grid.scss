@@ -6,6 +6,13 @@
     Github: @mopires
 */
 
+html, body{
+    *{
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
 .h-25{
     height: 25%;
 }
@@ -49,6 +56,7 @@
 div[class^="col-"]{
 
     word-break: break-word;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
 }
@@ -133,15 +141,6 @@ div[class^='col-'] hr
 
     html{
         font-size: 18px;
-    }
-
-    div[class^='col-sm']{
-
-        // float: left;
-        // flex: 1;
-        word-break: break-word;
-        box-sizing: border-box;
-    
     }
 
     .col-sm-10 {

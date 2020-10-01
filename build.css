@@ -55,6 +55,11 @@
     Email: mopires23@gmail.com
     Github: @mopires
 */
+html *, body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .h-25 {
   height: 25%;
 }
@@ -91,6 +96,7 @@
 
 div[class^=col-] {
   word-break: break-word;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -169,11 +175,6 @@ div[class^=col-] hr {
 @media screen and (max-width: 768px) {
   html {
     font-size: 18px;
-  }
-
-  div[class^=col-sm] {
-    word-break: break-word;
-    box-sizing: border-box;
   }
 
   .col-sm-10 {
@@ -379,7 +380,7 @@ div[class^=col-] hr {
   }
 
   .p-sm-5 {
-    padding: 2rem;
+    padding: 1.8rem;
   }
 }
 html div, body div {
@@ -507,7 +508,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.0005);
   color: #333;
   font-family: Nunito;
-  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=build.css.map */
