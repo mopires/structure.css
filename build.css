@@ -355,7 +355,7 @@ div[class^=col-] hr {
 }
 
 .p-5 {
-  padding: 50px;
+  padding: 45px;
 }
 
 @media screen and (max-width: 768px) {
