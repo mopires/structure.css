@@ -364,23 +364,23 @@ div[class^=col-] hr {
   }
 
   .p-sm-1 {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 
   .p-sm-2 {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .p-sm-3 {
-    padding: 1.2rem;
+    padding: 0.75rem;
   }
 
   .p-sm-4 {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .p-sm-5 {
-    padding: 1.8rem;
+    padding: 1.2rem;
   }
 }
 html div, body div {
@@ -472,6 +472,11 @@ a[class^=nav-brand] {
 
 .nav-link {
   padding: 10px;
+}
+
+.nav-input {
+  padding: 10px;
+  margin: 5px;
 }
 
 a[class^=nav-link] {
